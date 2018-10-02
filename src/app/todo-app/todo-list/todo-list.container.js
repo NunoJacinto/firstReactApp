@@ -1,6 +1,3 @@
-/*
-    Not needed now -> see what happens on index.js
-
 import { connect } from 'react-redux';
 
 import { actions } from '@state';
@@ -10,7 +7,6 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = {
-    addTodo: actions.todoListActions.AddTodo,
     toggleTodo: actions.todoListActions.ToggleTodo
 };
 
@@ -18,4 +14,3 @@ export default connect(
     mapStateToProps,
     mapDispatchToProps
 );
-*/
