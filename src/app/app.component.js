@@ -32,7 +32,7 @@ const App = () =>{
     return (
         <div className="container">                                
             <div className="col-12">                                   
-                <h1 className="text-center">I should be centered!</h1> 
+                <h1 className="text-center">Let's Redux!</h1> 
             <Router>
                 <div>
                     <ul>
