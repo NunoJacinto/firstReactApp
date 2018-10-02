@@ -10,7 +10,8 @@ const mapStateToProps = (state) => ({
 //acções do state que pretendemos chamar nos componentes
 const mapDispatchToProps = {
     decrement: actions.counterActions.Decrement,
-    increment: actions.counterActions.Increment
+    increment: actions.counterActions.Increment,
+    load: actions.counterActions.LoadRequest
 };
 
 

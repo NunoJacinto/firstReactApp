@@ -6,7 +6,7 @@ const ToDoApp = () => (
 
 export default ToDoApp;*/
 
-import React, { Component } from "react";
+import React  from "react";
 import { Route } from 'react-router-dom'
 
 import TodoList from './shared/todo-list';

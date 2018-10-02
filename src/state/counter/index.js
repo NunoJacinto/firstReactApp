@@ -1,4 +1,4 @@
 import counterActions from './actions';
 import counterReducers from './reducers';
-
-export { counterActions, counterReducers };
+import counterSagas from './effects'
+export { counterActions, counterReducers, counterSagas };
