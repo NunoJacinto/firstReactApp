@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+
 import env from '@env'
 
 
-import{
+import {
     BrowserRouter as Router,
     Route,
     Link,
@@ -27,31 +28,31 @@ const ToDoApp = loadable(() => import('./todo-app'))
 
 
 
-const App = () =>{
+const App = () => {
     console.log('env', env);
     return (
-        <div className="container">                                
-            <div className="col-12">                                   
-                <h1 className="text-center">Let's Redux!</h1> 
-            <Router>
-                <div>
-                    <ul>
-                        <li><Link to ="/">Home</Link></li>
-                        <li><Link to ="/about">About</Link></li>
-                        <li><Link to="/todo">ToDo</Link></li>
-                    </ul>
-                    <hr/>
-                    <Switch>
-                        <Route exact path="/" component={Home}/>
-                        <Route exact path="/about" component={About}/>
-                        <Route exact path="/todo" component={ToDoApp}/>
-                    </Switch>
-                </div>
- 
+        <div className="container">
+            <div className="col-12">
+                <h1 className="text-center">Let's Redux!</h1>
+                <Router>
+                    <div>
+                        <ul>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/about">About</Link></li>
+                            <li><Link to="/todo">ToDo</Link></li>
+                        </ul>
+                        <hr />
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            <Route path="/about" component={About} />
+                            <Route path="/todo" component={ToDoApp} />
+                        </Switch>
+                    </div>
 
-            </Router>
-            </div>                                                 
-        </div>                                 
+
+                </Router>
+            </div>
+        </div>
     )
 };
 
