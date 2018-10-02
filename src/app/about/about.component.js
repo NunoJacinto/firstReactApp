@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => (
+const About = ({counter, decrement,increment}) => (
     <div>
         <h1>About works!</h1>
         <hr />
